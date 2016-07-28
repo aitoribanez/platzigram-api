@@ -13,7 +13,7 @@ test('GET /:id', async t => {
   let srv = micro(pictures)
 
   let url = await listen(srv)
-  let body = await request({ uri: `${url}/`, json: true })
+  let body = await request({ uri: `${url}/${id}`, json: true })
   t.deepEqual(body, { id })
 })
 

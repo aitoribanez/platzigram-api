@@ -4,7 +4,6 @@ import { send } from 'micro'
 import HttpHash from 'http-hash'
 
 const hash = HttpHash()
-
 hash.set('GET /:id', async function getPicture (req, res, params) {
   send(res, 200, params)
 })
