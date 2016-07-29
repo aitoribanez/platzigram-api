@@ -18,5 +18,11 @@ export default {
       this.getImage(),
       this.getImage()
     ]
+  },
+  getImagesByTag () {
+    return [
+      this.getImage(),
+      this.getImage()
+    ]
   }
 }

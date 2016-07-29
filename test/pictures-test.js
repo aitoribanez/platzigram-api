@@ -75,3 +75,18 @@ test('GET /list', async t => {
 
   t.deepEqual(body, images)
 })
+
+test('GET /tag/:tag', async t => {
+  let images = fixtures.getImagesByTag()
+  let url = t.context.url
+
+  let options = {
+    method: 'GET',
+    uri: `${url}/tag/:tag`,
+    json: true
+  }
+
+  let body = await request(options)
+
+  t.deepEqual(body, images)
+})
