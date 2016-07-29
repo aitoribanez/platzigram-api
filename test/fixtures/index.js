@@ -11,5 +11,12 @@ export default {
       tags: [ 'awesome' ],
       createdAt: new Date().toString()
     }
+  },
+  getImages () {
+    return [
+      this.getImage(),
+      this.getImage(),
+      this.getImage()
+    ]
   }
 }
