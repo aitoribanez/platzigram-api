@@ -43,7 +43,7 @@ test('GET /:username', async t => {
   let url = t.context.url
 
   let options = {
-    type: 'GET',
+    method: 'GET',
     uri: `${url}/${user.username}`,
     json: true
   }
