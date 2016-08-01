@@ -1,4 +1,4 @@
 export default {
   db: {},
-  secret: process.env.PLATZIGRAM_SECRET || 'platzi'
+  secret: process.env.PLATZIGRAM_SECRET || 'pl4tzi'
 }

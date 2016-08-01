@@ -14,6 +14,7 @@ let db = new Db(config.db)
 if (env === 'test') {
   db = new DbStub()
 }
+
 const hash = HttpHash()
 
 hash.set('GET /tag/:tag', async function getPicture (req, res, params) {
