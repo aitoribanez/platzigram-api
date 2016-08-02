@@ -46,6 +46,7 @@ export default async function main (req, res) {
     try {
       await match.handler(req, res, match.params)
     } catch (e) {
+      console.log(e.message)
       send(res, 500, { error: e.message })
     }
   } else {
